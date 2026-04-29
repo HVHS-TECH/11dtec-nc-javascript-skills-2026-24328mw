@@ -18,11 +18,11 @@ console.log("Hi "+ username +".");
 console.log("As of "+ year +" you are "+ age +" years old.");
 console.log("You were born in "+ birthYear +".")
 console.log("In 10 years you will be "+ futureAge +" years old.")
-console.log("You have "+ money +" yen");
+console.log("You have ¥"+ money);
 money = money / 2
-console.log("You spend half of your money, now you have "+ money)
+console.log("You spend half of your money, now you have ¥"+ money)
 money = money + 3
-console.log("Then you get ¥3, now you have "+ money)
+console.log("Then you get ¥3, now you have ¥"+ money)
  /****************************
  functions
  ****************************/
