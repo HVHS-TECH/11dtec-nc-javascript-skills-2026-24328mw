@@ -11,7 +11,9 @@ let year = "2026";
 /****************************
  main code
  ****************************/
-console.log("hi "+ username +". As of "+ year +" you are "+ age +" years old. You have "+ money +" yen");
+console.log("hi "+ username +".");
+console.log("As of "+ year +" you are "+ age +" years old.);
+console.log("You have "+ money +" yen");
  /****************************
  functions
  ****************************/
