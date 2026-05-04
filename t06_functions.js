@@ -14,13 +14,13 @@ birthYear = year - age
 futureAge = age + 10
 //functions
 function welcome(){
-    OUTPUT.innerHTML += "<p>welcome to the shop</P>"
+    OUTPUT.innerHTML = "<p>welcome to the shop</P>";
 }
 /****************************
  main code
  ****************************/
-welcome()
-OUTPUT.innerHTML = "<p>Hi "+ username +".</p>";
+welcome();
+OUTPUT.innerHTML += "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
 OUTPUT.innerHTML += "<p>In 10 years you will be "+ futureAge +" years old.</p>";
