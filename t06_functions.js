@@ -2,7 +2,7 @@
 Name of task: functions.js
 ****************************/
 console.log("Running t06_functions.js")
-const OUTPUT = document.getElementById("ForJavaScriptOutput");
+const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
 let username = "Miriam";
 let age = 15;
