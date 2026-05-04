@@ -28,6 +28,7 @@ money = money / 2;
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+ money + "</p>";
 money = money + 3;
 OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+ money + "</p>";
+welcome()
  /****************************
  functions
  ****************************/
