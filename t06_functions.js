@@ -2,6 +2,7 @@
 Name of task: functions.js
 ****************************/
 console.log("Running t06_functions.js")
+const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
 let username = "Miriam";
 let age = 15;
@@ -18,7 +19,7 @@ function welcome(){
 /****************************
  main code
  ****************************/
-const OUTPUT = document.getElementById("JavaScriptOutput");
+welcome()
 OUTPUT.innerHTML = "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
@@ -28,7 +29,6 @@ money = money / 2;
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+ money + "</p>";
 money = money + 3;
 OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+ money + "</p>";
-welcome()
  /****************************
  functions
  ****************************/
