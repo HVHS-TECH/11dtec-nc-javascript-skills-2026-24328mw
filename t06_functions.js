@@ -14,7 +14,7 @@ birthYear = year - age
 futureAge = age + 10
 //functions
 function welcome(){
-    OUTPUT.innerHTML = "<p>welcome to the shop</P>";
+    OUTPUT.innerHTML = "<p>welcome to the shop</p>";
 }
 /****************************
  main code
