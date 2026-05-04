@@ -1,7 +1,7 @@
 /****************************
-Name of task: JavaScript_and_HTML.js
+Name of task: functions.js
 ****************************/
-console.log("Running t05_JavaScript_and_HTML.js")
+console.log("Running t06_functions.js")
 // Variables
 let username = "Miriam";
 let age = 15;
@@ -11,6 +11,10 @@ let birthYear
 let futureAge
 birthYear = year - age
 futureAge = age + 10
+//functions
+function welcome(){
+    OUTPUT.innerHTML += "<p>welcome</p>"
+}
 /****************************
  main code
  ****************************/
