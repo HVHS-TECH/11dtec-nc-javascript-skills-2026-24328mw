@@ -8,10 +8,12 @@ let username = "Miriam";
 let age = 15;
 let money = 1000000000;
 let year = 2026;
-let birthYear
-let futureAge
-birthYear = year - age
-futureAge = age + 10
+let birthYear;
+let futureAge;
+let name;
+let price;
+birthYear = year - age;
+futureAge = age + 10;
 //functions
 function welcome(){
     OUTPUT.innerHTML = "<p>welcome to the shop</p>";
