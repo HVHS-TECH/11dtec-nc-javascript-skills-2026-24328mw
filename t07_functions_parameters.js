@@ -10,18 +10,21 @@ let money = 1000000000;
 let year = 2026;
 let birthYear;
 let futureAge;
-let name;
-let price;
 birthYear = year - age;
 futureAge = age + 10;
 //functions
 function welcome(){
     OUTPUT.innerHTML = "<p>welcome to the shop</p>";
 }
+function displayProduct(_name,_price){
+    OUTPUT.innerHTML +="<p>"+ _name +": $"+ _price +"</p>"
+}
 /****************************
  main code
  ****************************/
 welcome();
+displayProduct("Chocolate bar",4)
+
 OUTPUT.innerHTML += "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
