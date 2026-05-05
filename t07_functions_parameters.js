@@ -14,17 +14,18 @@ birthYear = year - age;
 futureAge = age + 10;
 //functions
 function welcome(){
-    OUTPUT.innerHTML = "<p>welcome to the shop</p>";
+    OUTPUT.innerHTML = "<h1>welcome to the shop</h1>";
 }
 function displayProduct(_name,_price){
-    OUTPUT.innerHTML +="<p>"+ _name +": $"+ _price +"</p>";
+    OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
 /****************************
  main code
  ****************************/
 welcome();
 displayProduct("Chocolate bar",4)
-
+displayProduct("Chips", 3)
+displayProduct("Drink", 2.5)
 OUTPUT.innerHTML += "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
