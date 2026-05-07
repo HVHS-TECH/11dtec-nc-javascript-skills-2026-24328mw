@@ -5,6 +5,7 @@ Name of task: input_from_HTML.js
 console.log("Running t10_input_from_HTML.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
+let username
 let age = 15;
 let money = 1000000000;
 let year = 2026;
@@ -18,7 +19,7 @@ function welcome(){
 }
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
-let username = NAME_FIELD.value;
+username = NAME_FIELD.value;
 }
 function start(){
 /****************************
