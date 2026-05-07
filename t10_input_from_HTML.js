@@ -21,7 +21,7 @@ username = NAME_FIELD.value;
 /****************************
  main code
  ****************************/
-OUTPUT.innerHTML += "<p>Hi "+ username +".</p>";
+OUTPUT.innerHTML = "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
 OUTPUT.innerHTML += "<p>In 10 years you will be "+ futureAge +" years old.</p>";
