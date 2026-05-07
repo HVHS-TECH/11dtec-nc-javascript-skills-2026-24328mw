@@ -19,7 +19,8 @@ function welcome(){
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 let username = NAME_FIELD.value;
-
+}
+function start(){
 /****************************
  main code
  ****************************/
