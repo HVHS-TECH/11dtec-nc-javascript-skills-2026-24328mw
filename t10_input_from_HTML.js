@@ -14,18 +14,13 @@ let futureAge
 birthYear = year - age
 futureAge = age + 10
 //functions
-function welcome(){
-    OUTPUT.innerHTML = "<p>welcome to the shop</p>";
-}
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
-}
-function start(){
+
 /****************************
  main code
  ****************************/
-welcome();
 OUTPUT.innerHTML += "<p>Hi "+ username +".</p>";
 OUTPUT.innerHTML += "<p>As of "+ year +" you are "+ age +" years old.</p>";
 OUTPUT.innerHTML += "<p>You were born in "+ birthYear +".</p>";
