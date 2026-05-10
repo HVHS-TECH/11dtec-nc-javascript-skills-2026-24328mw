@@ -23,9 +23,9 @@ function displayProduct(_name,_price){
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
-const AGE_FIELD = document.getElementById(ageField);
+const AGE_FIELD = document.getElementById("ageField");
 age = Number(AGE_FIELD.value);
-const MONEY_FIELD = document.getElementById(moneyField);
+const MONEY_FIELD = document.getElementById("moneyField");
 money = Number(MONEY_FIELD.value);
 
 /****************************
