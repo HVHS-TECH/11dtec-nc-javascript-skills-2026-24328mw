@@ -5,14 +5,14 @@ Name of task: data_types.js
 console.log("Running t11_data_types.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
-let username
-let age
-let money
+let username;
+let age;
+let money;
 let year = 2026;
-let birthYear
-let futureAge
-birthYear = year - age
-futureAge = age + 10
+let birthYear;
+let futureAge;
+birthYear = year - age;
+futureAge = age + 10;
 //functions
 function welcome(){
     OUTPUT.innerHTML += "<h1>welcome to the shop</h1>";
