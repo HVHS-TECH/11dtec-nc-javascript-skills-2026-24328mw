@@ -1,13 +1,13 @@
 /****************************
-Name of task: input_from_HTML.js
+Name of task: data_types.js
 ****************************/
 
-console.log("Running t10_input_from_HTML.js")
+console.log("Running t11_data_types.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
 let username
 let age
-let money = 1000000000;
+let money
 let year = 2026;
 let birthYear
 let futureAge
