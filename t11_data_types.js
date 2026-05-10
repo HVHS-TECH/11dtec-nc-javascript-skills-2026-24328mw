@@ -11,8 +11,7 @@ let money;
 let year = 2026;
 let birthYear;
 let futureAge;
-birthYear = year - age;
-futureAge = age + 10;
+
 //functions
 function welcome(){
     OUTPUT.innerHTML += "<h1>welcome to the shop</h1>";
@@ -27,7 +26,8 @@ const AGE_FIELD = document.getElementById("ageField");
 age = Number(AGE_FIELD.value);
 const MONEY_FIELD = document.getElementById("moneyField");
 money = Number(MONEY_FIELD.value);
-
+birthYear = year - age;
+futureAge = age + 10;
 /****************************
  main code
  ****************************/
