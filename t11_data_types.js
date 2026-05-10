@@ -6,7 +6,7 @@ console.log("Running t10_input_from_HTML.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
 let username
-let age = 15;
+let age
 let money = 1000000000;
 let year = 2026;
 let birthYear
@@ -23,7 +23,10 @@ function displayProduct(_name,_price){
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
-
+const AGE_FIELD = document.getElementById(ageField);
+age = number(AGE_FIELD.value);
+const MONEY_FIELD = document.getElementById(moneyField);
+money = number(MONEY_FIELD.value);
 
 /****************************
  main code
