@@ -41,7 +41,7 @@ OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+ money + 
 money = money + 3;
 OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+ money + "</p>";
 welcome();
-displayProduct("Chocolate bar",4)
-displayProduct("Chips", 3)
-displayProduct("Drink", 2.5)
+displayProduct("Chocolate bar",4);
+displayProduct("Chips", 3);
+displayProduct("Drink", 2.5);
 }
