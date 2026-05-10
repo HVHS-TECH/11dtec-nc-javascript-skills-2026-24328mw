@@ -14,6 +14,12 @@ let futureAge
 birthYear = year - age
 futureAge = age + 10
 //functions
+function welcome(){
+    OUTPUT.innerHTML += "<h1>welcome to the shop</h1>";
+}
+function displayProduct(_name,_price){
+    OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
+}
 function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
@@ -30,4 +36,8 @@ money = money / 2;
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+ money + "</p>";
 money = money + 3;
 OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+ money + "</p>";
+welcome();
+displayProduct("Chocolate bar",4)
+displayProduct("Chips", 3)
+displayProduct("Drink", 2.5)
 }
