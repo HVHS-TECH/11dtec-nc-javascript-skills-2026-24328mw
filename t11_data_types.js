@@ -24,6 +24,7 @@ function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
 
+
 /****************************
  main code
  ****************************/
