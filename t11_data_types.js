@@ -24,9 +24,9 @@ function getFormInput(){
 const NAME_FIELD = document.getElementById("nameField");
 username = NAME_FIELD.value;
 const AGE_FIELD = document.getElementById(ageField);
-age = number(AGE_FIELD.value);
+age = Number(AGE_FIELD.value);
 const MONEY_FIELD = document.getElementById(moneyField);
-money = number(MONEY_FIELD.value);
+money = Number(MONEY_FIELD.value);
 
 /****************************
  main code
