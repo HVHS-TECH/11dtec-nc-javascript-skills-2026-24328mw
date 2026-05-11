@@ -44,7 +44,4 @@ welcome();
 displayProduct("Chocolate bar",4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
-if(money >= 4){
-    OUTPUT.innerHTML +=
-}
 }
