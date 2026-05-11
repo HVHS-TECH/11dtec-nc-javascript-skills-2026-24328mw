@@ -45,9 +45,9 @@ displayProduct("Chocolate bar",4);
 displayProduct("Chips", 3);
 displayProduct("Drink", 2.5);
 if(money >= 4){
-    OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4 <br>You CAN afford a chocolate bar.</p>"
+    OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. You CAN afford a chocolate bar.</p>"
 }
 else{
-    OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4 <br>Sorry you CAN'T afford a chocolate bar.</p>"
+    OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>"
 }
 }
