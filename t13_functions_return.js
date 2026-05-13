@@ -11,7 +11,8 @@ let money;
 let year = 2026;
 let birthYear;
 let futureAge;
-let change
+let change;
+let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price
