@@ -51,7 +51,7 @@ displayProduct("Drink", 2.5);
 if(money >= 4){
     OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. You CAN afford a chocolate bar.</p>"
     change = calculateChange(money, 4)
-    OUTPUT.innerHTML += "<p>You will get " + change + " change</p>"
+    OUTPUT.innerHTML += "<p>You will get ¥" + change + " change</p>"
 }
 else{
     OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>"
