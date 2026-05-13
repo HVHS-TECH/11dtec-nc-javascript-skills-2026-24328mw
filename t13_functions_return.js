@@ -12,8 +12,6 @@ let year = 2026;
 let birthYear;
 let futureAge;
 let change;
-let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
-let chocolateOpinion;
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price
@@ -32,8 +30,6 @@ const AGE_FIELD = document.getElementById("ageField");
 age = Number(AGE_FIELD.value);
 const MONEY_FIELD = document.getElementById("moneyField");
 money = Number(MONEY_FIELD.value);
-const CHOCOLATE_OPINION_FIELD = document.getElementById("chocolateOpinionField");
-chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
 birthYear = year - age;
 futureAge = age + 10;
 /****************************
@@ -60,5 +56,4 @@ if(money >= 4){
 else{
     OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>"
 }
-OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>"
 }

@@ -20,8 +20,18 @@
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
-
-  <div id="spaceForJavaScriptOutput">
+  <form onsubmit="return false">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="name">
+    <label for="formAge">Age:</label>
+    <input type="text" id="ageField" name="formAge" placeholder="age">
+    <label for="formMoney">Money:</label>
+    <input type="text" id="moneyField" name="formMoney" placeholder="money">
+    <label for="formChocolateOpinion">On a scale of 0-3 how much do you like chocolate</label>
+    <input type="text" id="chocolateOpinionField" name="formChocolateOpinion">
+    <input type="submit" onclick=getFormInput()>
+  </form>
+  <div id="JavaScriptOutput">
 
     The output of your script will go here.
 
