@@ -64,4 +64,6 @@ else{
     OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>"
 }
 OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>"
+for(let i = verses; i > 0; i--)
+    
 }
