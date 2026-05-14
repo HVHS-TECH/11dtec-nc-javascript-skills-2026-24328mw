@@ -64,10 +64,11 @@ else{
     OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>";
 }
 OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>";
-for(let i = verses; i>=1; i--){
+for(let i = verses; i>=1; i=i){
     OUTPUT.innerHTML += "<p>" +i+ " bottles of chocolate milk on the wall</p>";
     OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk</p>";
     OUTPUT.innerHTML += "<p>And if one of those bottles should happen to fall</p>";
-    OUTPUT.innerHTML += "<p>There'd be "+i - 1+" bottles of chocolate milk on the wall</p>";
+    i = i - 1
+    OUTPUT.innerHTML += "<p>There'd be "+i+" bottles of chocolate milk on the wall</p>";
 }
 }
