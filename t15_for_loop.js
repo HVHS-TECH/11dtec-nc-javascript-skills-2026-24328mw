@@ -14,6 +14,7 @@ let futureAge;
 let change;
 let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 let chocolateOpinion;
+let verses;
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price
@@ -34,6 +35,8 @@ const MONEY_FIELD = document.getElementById("moneyField");
 money = Number(MONEY_FIELD.value);
 const CHOCOLATE_OPINION_FIELD = document.getElementById("chocolateOpinionField");
 chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
+const VERSES_FIELD = document.getElementById("versesField");
+verses = Number(VERSES_FIELD.value);
 birthYear = year - age;
 futureAge = age + 10;
 /****************************
