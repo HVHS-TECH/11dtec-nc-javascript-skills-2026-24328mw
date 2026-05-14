@@ -65,5 +65,8 @@ else{
 }
 OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>"
 for(let i = verses; i > 0; i--)
-    
+    OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk on the wall</p>"
+    OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk</p>"
+    OUTPUT.innerHTML += "<p>And if one of those bottles should happen to fall</p>"
+    OUTPUT.innerHTML += "<p>There'd be" + i - 1 + "bottles of chocolate milk on the wall</p>"
 }
