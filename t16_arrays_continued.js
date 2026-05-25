@@ -47,7 +47,6 @@ function getFormInput(){
     /****************************
     main code
     ****************************/
-   OUTPUT.innerHTML += "<form onsubmit="return false"><label for="formList">Add an item to your shopping list</label><input type="text" id="listField" name="formList" placeholder="item"><input type="submit" onclick=getListFormInput()></form>"
     OUTPUT.innerHTML = "<p>Hi "+username+".</p>";
     OUTPUT.innerHTML += "<p>As of "+year+" you are "+age+" years old.</p>";
     OUTPUT.innerHTML += "<p>You were born in "+birthYear+".</p>";
