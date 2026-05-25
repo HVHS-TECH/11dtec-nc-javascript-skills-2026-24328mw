@@ -28,7 +28,9 @@ function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
 function getListFormInput(){
-    OUTPUT.innerHTML += "<p>You have added something to your list</p>";
+    const LIST_FIELD = document.getElementById("listField");
+    item = LIST_FIELD.value;
+    OUTPUT.innerHTML += "<p>You have added "+item+" to your list</p>";
 }
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
