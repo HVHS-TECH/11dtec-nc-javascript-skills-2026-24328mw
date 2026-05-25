@@ -14,7 +14,6 @@ let change;
 let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 let chocolateOpinion;
 let verses;
-let listArray = [];
 let item;
 //functions
 function calculateChange(_money,_price){
