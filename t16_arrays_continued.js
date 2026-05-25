@@ -14,22 +14,16 @@ let change;
 let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 let chocolateOpinion;
 let verses;
-let item;
 //functions
 function calculateChange(_money,_price){
-    let change = _money - _price;
-    return change;
+    let change = _money - _price
+     return change
 }
 function welcome(){
     OUTPUT.innerHTML += "<h1>welcome to the shop</h1>";
 }
 function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
-}
-function getListFormInput(){
-    const LIST_FIELD = document.getElementById("listField");
-    item = LIST_FIELD.value;
-    OUTPUT.innerHTML += "<p>You have added "+item+" to your list</p>";
 }
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
