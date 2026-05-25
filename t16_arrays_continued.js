@@ -29,7 +29,7 @@ function displayProduct(_name,_price){
 function getListFormInput(){
     const LIST_FIELD = document.getElementById("listField");
     item = LIST_FIELD.value;
-    OUTPUT.innerHTML += "<p>You have added "+item+" to your list</p>";
+    OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
 }
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
@@ -69,7 +69,7 @@ function getFormInput(){
         OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>";
     }
     OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>";
-    for(let i = verses; i>=0; i=i){
+    for(let i = verses; i>=1; i=i){
         if(i>=2){
             OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk on the wall</p>";
             OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk</p>";
