@@ -36,7 +36,11 @@
   <form onsubmit="return false">
     <label for="formList">Add an item to your shopping list</label>
     <input type="text" id="listField" name="formList" placeholder="item">
-    <input type="submit" onclick=getListFormInput()></form>
+    <input type="submit" onclick=getListFormInput() value="Add">
+  </form>
+  <form onsubmit="return false">
+    <input type="submit" onclick=displayList() value="View list">
+  </form>
   <div id="JavaScriptOutput">
 
     The output of your script will go here.
