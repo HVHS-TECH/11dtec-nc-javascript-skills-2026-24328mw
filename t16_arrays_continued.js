@@ -33,7 +33,10 @@ function getListFormInput(){
     listArray.push(item)
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
 }
-function display
+function displayList(){
+    for(let i=0; i<listArray.length; i++)
+        OUTPUT.innerHTML += "<p></p>"
+}
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
