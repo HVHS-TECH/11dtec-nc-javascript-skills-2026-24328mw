@@ -34,7 +34,7 @@ function getListFormInput(){
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
 }
 function displayList(){
-    OUTPUT.innerHTML = "<p>Your List:</p>";
+    OUTPUT.innerHTML = "<h1>Your List:</h1>";
     for(let i=0; i<listArray.length; i++){
         OUTPUT.innerHTML += "<p>"+listArray[i]+"</p>"
     }
