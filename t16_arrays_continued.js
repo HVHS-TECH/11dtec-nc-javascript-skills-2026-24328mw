@@ -15,7 +15,7 @@ let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocola
 let chocolateOpinion;
 let verses;
 let item;
-let listArray
+let listArray = []
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price;
@@ -34,8 +34,10 @@ function getListFormInput(){
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
 }
 function displayList(){
-    for(let i=0; i<listArray.length; i++)
-        OUTPUT.innerHTML += "<p></p>"
+    OUTPUT.innerHTML = "<p>Your List:</p>"
+    for(let i=0; i<listArray.length; i++){
+        OUTPUT.innerHTML += "<p>"+listArray[i]+"</p>"
+    }
 }
 function getFormInput(){
     const NAME_FIELD = document.getElementById("nameField");
