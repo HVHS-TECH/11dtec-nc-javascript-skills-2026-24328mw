@@ -40,6 +40,7 @@ function displayList(){
     }
 }
 function getFormInput(){
+    const MAIN_FORM = document.getElementById(mainForm);
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
     const AGE_FIELD = document.getElementById("ageField");
