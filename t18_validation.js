@@ -44,6 +44,7 @@ function getFormInput(){
     if (MAIN_FORM.checkValidity() === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
+    else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
     const AGE_FIELD = document.getElementById("ageField");
@@ -56,6 +57,7 @@ function getFormInput(){
     verses = Number(VERSES_FIELD.value);
     birthYear = year - age;
     futureAge = age + 10;
+    if (isNaN)
     /****************************
     main code
     ****************************/
@@ -99,5 +101,6 @@ function getFormInput(){
         else{
             OUTPUT.innerHTML += "<p>There'd be "+i+" bottle of chocolate milk on the wall</p>";
         }
+    }
     }
 }
