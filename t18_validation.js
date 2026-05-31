@@ -41,6 +41,9 @@ function displayList(){
 }
 function getFormInput(){
     const MAIN_FORM = document.getElementById(mainForm);
+    if (MAIN_FORM.checkValidity() === false){
+        OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
+    }
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
     const AGE_FIELD = document.getElementById("ageField");
