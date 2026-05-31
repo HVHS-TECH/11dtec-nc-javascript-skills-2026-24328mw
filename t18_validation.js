@@ -57,10 +57,6 @@ function getFormInput(){
     verses = Number(VERSES_FIELD.value);
     birthYear = year - age;
     futureAge = age + 10;
-    if (isNaN(username) = true){
-        OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
-    }
-    else{
     /****************************
     main code
     ****************************/
@@ -104,7 +100,6 @@ function getFormInput(){
         else{
             OUTPUT.innerHTML += "<p>There'd be "+i+" bottle of chocolate milk on the wall</p>";
         }
-    }
     }
     }
 }
