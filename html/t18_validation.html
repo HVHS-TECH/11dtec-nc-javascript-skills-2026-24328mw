@@ -21,23 +21,25 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
   <form id="mainForm" onsubmit="return false">
-    <label for="formName">Name:</label>
-    <input type="text" id="nameField" name="formName" placeholder="name" required>
-    <label for="formAge">Age:</label>
-    <input type="number" min="0" id="ageField" name="formAge" placeholder="age" required>
-    <label for="formMoney">Money:</label>
-    <input type="number" id="moneyField" name="formMoney" placeholder="money" required>
-    <label for="formChocolateOpinion">On a scale of 0-3 how much do you like chocolate?</label>
-    <input type="number" max="3" min="0" id="chocolateOpinionField" name="formChocolateOpinion" required>
-    <label for="formVerses">How many verses would you like?</label>
-    <input type="number" min="0" id="versesField" name="formVerses" required>
+    <label for="formName">Name:</label><br>
+    <input type="text" id="nameField" name="formName" placeholder="name" required><br>
+    <label for="formAge">Age:</label><br>
+    <input type="number" min="0" id="ageField" name="formAge" placeholder="age" required><br>
+    <label for="formMoney">Money:</label><br>
+    <input type="number" id="moneyField" name="formMoney" placeholder="money" required><br>
+    <label for="formChocolateOpinion">On a scale of 0-3 how much do you like chocolate?</label><br>
+    <input type="number" max="3" min="0" id="chocolateOpinionField" name="formChocolateOpinion" required><br>
+    <label for="formVerses">How many verses would you like?</label><br>
+    <input type="number" min="0" id="versesField" name="formVerses" required><br>
     <input type="submit" onclick=getFormInput()>
   </form>
+  <br><br>
   <form onsubmit="return false">
-    <label for="formList">Add an item to your shopping list</label>
+    <label for="formList">Add an item to your shopping list</label><br>
     <input type="text" id="listField" name="formList" placeholder="item">
     <input type="submit" onclick=getListFormInput() value="Add">
   </form>
+  <br>
   <button onclick="displayList()">View list</button>
   <div id="JavaScriptOutput">
 
