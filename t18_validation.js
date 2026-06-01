@@ -39,12 +39,14 @@ function displayList(){
         OUTPUT.innerHTML += "<p>Item "+ (i+1) +": "+listArray[i]+"</p>"
     }
 }
-function testValidity(){
-    
+function testFormValidity(_form){
+    let formValidity = _form.checkValidity();
+    return formValidity;
 }
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
-    if (MAIN_FORM.checkValidity() === false){
+    testFormValidity(MAIN_FORM)
+    if (MAIN_FORM === false) {
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
     else{
