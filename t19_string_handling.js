@@ -47,7 +47,7 @@ function getFormInput(){
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
-    if (username.length =< 3){
+    if (username.length <= 3){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
     else{
