@@ -39,6 +39,9 @@ function displayList(){
         OUTPUT.innerHTML += "<p>Item "+ (i+1) +": "+listArray[i]+"</p>"
     }
 }
+function testValidity(){
+    
+}
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
     if (MAIN_FORM.checkValidity() === false){
