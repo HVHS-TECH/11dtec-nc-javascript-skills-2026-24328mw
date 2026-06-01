@@ -47,6 +47,10 @@ function getFormInput(){
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
+    if (username.length =< 3){
+        OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
+    }
+    else{
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
@@ -100,6 +104,7 @@ function getFormInput(){
         else{
             OUTPUT.innerHTML += "<p>There'd be "+i+" bottle of chocolate milk on the wall</p>";
         }
+    }
     }
     }
 }
