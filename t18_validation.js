@@ -27,11 +27,22 @@ function welcome(){
 function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
+function testFormValidity(_form){
+    let formValidity = _form.checkValidity();
+    return formValidity;
+}
 function getListFormInput(){
+    const LIST_FORM = document.getElementById("listForm");
+    testFormValidity(LIST_FORM)
+    if (LIST_FORM === false) {
+        OUTPUT.innerHTML = "<p>Please add an item</p>"
+    }
+    else{
     const LIST_FIELD = document.getElementById("listField");
     item = LIST_FIELD.value;
     listArray.push(item)
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
+    }
 }
 function displayList(){
     OUTPUT.innerHTML = "<h1>Your List:</h1>";
@@ -39,10 +50,7 @@ function displayList(){
         OUTPUT.innerHTML += "<p>Item "+ (i+1) +": "+listArray[i]+"</p>"
     }
 }
-function testFormValidity(_form){
-    let formValidity = _form.checkValidity();
-    return formValidity;
-}
+
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
     testFormValidity(MAIN_FORM)
