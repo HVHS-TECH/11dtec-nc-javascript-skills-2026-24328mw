@@ -126,3 +126,5 @@ function getFormInput(){
     }
     }
 }
+testTextFieldValidity(username)
+OUTPUT.innerHTML = "<p></p>"
