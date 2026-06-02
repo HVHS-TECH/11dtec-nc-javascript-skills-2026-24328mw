@@ -27,6 +27,9 @@ function welcome(){
 function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
+function testTextFieldValidity(_text){
+    let textFieldValidity
+}
 function testFormValidity(_form){
     let formValidity = _form.checkValidity();
     return formValidity;
