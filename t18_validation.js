@@ -4,7 +4,7 @@
 console.log("Running t18_validation.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
-let username;
+let username = Miriam;
 let age;
 let money;
 let year = 2026;
@@ -127,4 +127,5 @@ function getFormInput(){
     }
 }
 testTextFieldValidity(username)
-OUTPUT.innerHTML = "<p></p>"
+OUTPUT.innerHTML = "<p>Test</p>"
+OUTPUT.innerHTML += "<p>"+textFieldValidity+"</p>"
