@@ -16,6 +16,8 @@ let chocolateOpinion;
 let verses;
 let item;
 let listArray = [];
+let formValidity;
+let textFieldValidity
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price;
