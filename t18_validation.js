@@ -28,7 +28,8 @@ function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
 function testTextFieldValidity(_text){
-    let textFieldValidity = 
+    let textFieldValidity = isNaN(_text);
+    return textFieldValidity;
 }
 function testFormValidity(_form){
     let formValidity = _form.checkValidity();
@@ -57,12 +58,17 @@ function displayList(){
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
     testFormValidity(MAIN_FORM)
-    if (MAIN_FORM === false) {
+    if (formValidity === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
+    testTextFieldValidity(username)
+    if (textFieldValidity === false){
+        OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
+    }
+    else{
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
@@ -116,6 +122,7 @@ function getFormInput(){
         else{
             OUTPUT.innerHTML += "<p>There'd be "+i+" bottle of chocolate milk on the wall</p>";
         }
+    }
     }
     }
 }
