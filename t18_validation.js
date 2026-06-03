@@ -64,7 +64,6 @@ function getFormInput(){
     testFormValidity(MAIN_FORM)
     if (formValidity === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
-        console.log(formValidity)
     }
     else{
     const NAME_FIELD = document.getElementById("nameField");
