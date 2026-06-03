@@ -16,6 +16,8 @@ let chocolateOpinion;
 let verses;
 let item;
 let listArray = [];
+let formValidity;
+let textFieldValidity
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price;
@@ -27,11 +29,28 @@ function welcome(){
 function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
+function testTextFieldValidity(_text){
+    let textFieldValidity = isNaN(_text.value);
+    console.log(textFieldValidity)
+    return textFieldValidity;
+}
+function testFormValidity(_form){
+    let formValidity = _form.checkValidity();
+    console.log(formValidity)
+    return formValidity;
+}
 function getListFormInput(){
+    const LIST_FORM = document.getElementById("listForm");
+    formValidity = testFormValidity(LIST_FORM)
+    if (formValidity === false) {
+        OUTPUT.innerHTML = "<p>Please add a valid item</p>"
+    }
+    else{
     const LIST_FIELD = document.getElementById("listField");
     item = LIST_FIELD.value;
     listArray.push(item)
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
+    }
 }
 function displayList(){
     OUTPUT.innerHTML = "<h1>Your List:</h1>";
@@ -39,16 +58,19 @@ function displayList(){
         OUTPUT.innerHTML += "<p>Item "+ (i+1) +": "+listArray[i]+"</p>"
     }
 }
+
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
-    if (MAIN_FORM.checkValidity() === false){
+    formValidity = testFormValidity(MAIN_FORM)
+    if (formValidity === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
-    if (username.length <= 3){
-        OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
+    textFieldValidity = testTextFieldValidity(username);
+    if (textFieldValidity === false){
+        OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
     else{
     const AGE_FIELD = document.getElementById("ageField");
