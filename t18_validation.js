@@ -62,6 +62,7 @@ function displayList(){
 function getFormInput(){
     const MAIN_FORM = document.getElementById("mainForm");
     testFormValidity(MAIN_FORM)
+    console.log(formValidity + "bfdsu")
     if (formValidity === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
     }
