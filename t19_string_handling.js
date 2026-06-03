@@ -39,6 +39,11 @@ function testFormValidity(_form){
     console.log(formValidity)
     return formValidity;
 }
+function testLength(_input){
+    length = _input.trim()
+    length = length.length
+    return length
+}
 function getListFormInput(){
     const LIST_FORM = document.getElementById("listForm");
     formValidity = testFormValidity(LIST_FORM)
@@ -73,6 +78,7 @@ function getFormInput(){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
     else{
+    length = testLength(username)
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
