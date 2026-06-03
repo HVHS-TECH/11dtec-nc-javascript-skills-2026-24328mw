@@ -42,7 +42,7 @@ function testFormValidity(_form){
 }
 function testLength(_input){
     fieldLength = _input.length;
-    console.log(_input.length)
+    console.log(_input.length);
     console.log(fieldLength);
     return fieldLength;
 }
@@ -80,8 +80,11 @@ function getFormInput(){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
     else{
-    fieldLength = testLength(Miriam)
-    console.log(fieldLength)
+    fieldLength = testLength(username)
+    if (fieldLength < 3){
+        OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
+    }
+    else{
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
@@ -135,6 +138,7 @@ function getFormInput(){
         else{
             OUTPUT.innerHTML += "<p>There'd be "+i+" bottle of chocolate milk on the wall</p>";
         }
+    }
     }
     }
     }
