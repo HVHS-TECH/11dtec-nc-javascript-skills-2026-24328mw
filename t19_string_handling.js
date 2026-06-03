@@ -18,6 +18,7 @@ let item;
 let listArray = [];
 let formValidity;
 let textFieldValidity
+let length
 //functions
 function calculateChange(_money,_price){
     let change = _money - _price;
@@ -36,13 +37,14 @@ function testTextFieldValidity(_text){
 }
 function testFormValidity(_form){
     let formValidity = _form.checkValidity();
-    console.log(formValidity)
+    console.log(formValidity);
     return formValidity;
 }
 function testLength(_input){
-    length = _input.trim()
-    length = length.length
-    return length
+    fieldLength = _input.length;
+    console.log(_input.length)
+    console.log(fieldLength);
+    return fieldLength;
 }
 function getListFormInput(){
     const LIST_FORM = document.getElementById("listForm");
@@ -78,7 +80,8 @@ function getFormInput(){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
     else{
-    length = testLength(username)
+    fieldLength = testLength(Miriam)
+    console.log(fieldLength)
     const AGE_FIELD = document.getElementById("ageField");
     age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
