@@ -34,7 +34,7 @@ function checkLength(_input){
     return fieldLength;
 }
 function testTextFieldValidity(_text){
-    let textFieldValidity = isNaN(_text);
+    let textFieldValidity = isNaN(_text.value);
     return textFieldValidity;
 }
 function testFormValidity(_form){
