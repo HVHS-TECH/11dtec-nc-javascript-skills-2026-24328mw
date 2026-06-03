@@ -48,14 +48,8 @@ function getListFormInput(){
     else{
     const LIST_FIELD = document.getElementById("listField");
     item = LIST_FIELD.value;
-    textFieldValidity = testTextFieldValidity(username);
-    if (textFieldValidity === false){
-        OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
-    }
-    else{
     listArray.push(item)
     OUTPUT.innerHTML = "<p>You have added "+item+" to your list</p>";
-    }
     }
 }
 function displayList(){
