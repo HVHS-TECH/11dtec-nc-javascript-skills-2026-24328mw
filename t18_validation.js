@@ -41,7 +41,7 @@ function testFormValidity(_form){
 function getListFormInput(){
     const LIST_FORM = document.getElementById("listForm");
     testFormValidity(LIST_FORM)
-    if (LIST_FORM === false) {
+    if (formValidity === false) {
         OUTPUT.innerHTML = "<p>Please add a valid item</p>"
     }
     else{
