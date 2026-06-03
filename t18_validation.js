@@ -31,7 +31,7 @@ function displayProduct(_name,_price){
 }
 function testTextFieldValidity(_text){
     let textFieldValidity = isNaN(_text.value);
-    console.log(textFieldValidityValidity)
+    console.log(textFieldValidity)
     return textFieldValidity;
 }
 function testFormValidity(_form){
