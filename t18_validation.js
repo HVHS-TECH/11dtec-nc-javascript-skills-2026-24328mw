@@ -68,7 +68,7 @@ function getFormInput(){
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
-    textFieldValidity = testTextFieldValidity(username)
+    textFieldValidity = testTextFieldValidity(username);
     if (textFieldValidity === false){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
