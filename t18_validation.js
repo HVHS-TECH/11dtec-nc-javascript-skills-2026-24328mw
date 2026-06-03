@@ -41,7 +41,7 @@ function testFormValidity(_form){
 }
 function getListFormInput(){
     const LIST_FORM = document.getElementById("listForm");
-    testFormValidity(LIST_FORM)
+    formValidity = testFormValidity(LIST_FORM)
     if (formValidity === false) {
         OUTPUT.innerHTML = "<p>Please add a valid item</p>"
     }
@@ -68,7 +68,7 @@ function getFormInput(){
     else{
     const NAME_FIELD = document.getElementById("nameField");
     username = NAME_FIELD.value;
-    testTextFieldValidity(username)
+    textFieldValidity = testTextFieldValidity(username)
     if (textFieldValidity === false){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
     }
