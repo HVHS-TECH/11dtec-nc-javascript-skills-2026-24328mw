@@ -31,6 +31,7 @@ function displayProduct(_name,_price){
 }
 function testTextFieldValidity(_text){
     let textFieldValidity = isNaN(_text.value);
+    console.log(textFieldValidityValidity)
     return textFieldValidity;
 }
 function testFormValidity(_form){
@@ -63,6 +64,7 @@ function getFormInput(){
     testFormValidity(MAIN_FORM)
     if (formValidity === false){
         OUTPUT.innerHTML = "<p>Please fill all fields correctly</p>"
+        console.log(formValidity)
     }
     else{
     const NAME_FIELD = document.getElementById("nameField");
