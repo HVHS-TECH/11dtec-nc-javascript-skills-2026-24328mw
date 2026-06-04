@@ -6,7 +6,7 @@ const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
 const YEAR = 2026;
 const CHOCOLATE_OPINION_ARRAY = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
-const user = {};
+const USER = {};
 let change;
 let chocolateOpinion;
 let verses;
