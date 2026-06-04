@@ -115,7 +115,7 @@ function getFormInput(){
     else{
         OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>";
     }
-    OUTPUT.innerHTML += "<p>"+chocolateOpinionArray[chocolateOpinion]+"</p>";
+    OUTPUT.innerHTML += "<p>"+CHOCOLATE_OPINION_ARRAY[chocolateOpinion]+"</p>";
     for(let i = verses; i>=1; i=i){
         if(i>=2){
             OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk on the wall</p>";
