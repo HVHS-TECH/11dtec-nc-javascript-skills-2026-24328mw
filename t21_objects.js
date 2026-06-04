@@ -8,8 +8,6 @@ const YEAR = 2026;
 const CHOCOLATE_OPINION_ARRAY = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 const USER = {};
 let change;
-let chocolateOpinion;
-let verses;
 let item;
 let listArray = [];
 let formValidity;
@@ -82,9 +80,9 @@ function getFormInput(){
     const MONEY_FIELD = document.getElementById("moneyField");
     USER.money = Number(MONEY_FIELD.value);
     const CHOCOLATE_OPINION_FIELD = document.getElementById("chocolateOpinionField");
-    chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
+    USER.chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
     const VERSES_FIELD = document.getElementById("versesField");
-    verses = Number(VERSES_FIELD.value);
+    USER.verses = Number(VERSES_FIELD.value);
     USER.birthYear = YEAR - USER.age;
     USER.futureAge = USER.age + 10;
     /****************************
@@ -111,8 +109,8 @@ function getFormInput(){
     else{
         OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. Sorry you CAN'T afford a chocolate bar.</p>";
     }
-    OUTPUT.innerHTML += "<p>"+CHOCOLATE_OPINION_ARRAY[chocolateOpinion]+"</p>";
-    for(let i = verses; i>=1; i=i){
+    OUTPUT.innerHTML += "<p>"+CHOCOLATE_OPINION_ARRAY[USER.chocolateOpinion]+"</p>";
+    for(let i = USER.verses; i>=1; i=i){
         if(i>=2){
             OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk on the wall</p>";
             OUTPUT.innerHTML += "<p>"+i+" bottles of chocolate milk</p>";
