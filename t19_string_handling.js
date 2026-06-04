@@ -21,8 +21,8 @@ let textFieldValidity
 let length
 //functions
 function calculateChange(_money,_price){
-    let _change = _money - _price;
-    return _change;
+    let change = _money - _price;
+    return change;
 }
 function welcome(){
     OUTPUT.innerHTML += "<h1>welcome to the shop</h1>";
@@ -31,16 +31,16 @@ function displayProduct(_name,_price){
     OUTPUT.innerHTML +="<p>"+ _name +": ¥"+ _price +"</p>";
 }
 function testTextFieldValidity(_text){
-    let _textFieldValidity = isNaN(_text.value);
-    return _textFieldValidity;
+    let textFieldValidity = isNaN(_text.value);
+    return textFieldValidity;
 }
 function testFormValidity(_form){
-    let _formValidity = _form.checkValidity();
-    return _formValidity;
+    let formValidity = _form.checkValidity();
+    return formValidity;
 }
 function testLength(_input){
-    _fieldLength = _input.length;
-    return _fieldLength;
+    fieldLength = _input.length;
+    return fieldLength;
 }
 function getListFormInput(){
     const LIST_FORM = document.getElementById("listForm");
