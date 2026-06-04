@@ -7,11 +7,11 @@ const OUTPUT = document.getElementById("JavaScriptOutput");
 let username;
 let age;
 let money;
-let year = 2026;
+const YEAR = 2026;
 let birthYear;
 let futureAge;
 let change;
-let chocolateOpinionArray = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+const CHOCOLATE_OPINION_ARRAY = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 let chocolateOpinion;
 let verses;
 let item;
@@ -89,13 +89,13 @@ function getFormInput(){
     chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
     const VERSES_FIELD = document.getElementById("versesField");
     verses = Number(VERSES_FIELD.value);
-    birthYear = year - age;
+    birthYear = YEAR - age;
     futureAge = age + 10;
     /****************************
     main code
     ****************************/
     OUTPUT.innerHTML = "<p>Hi "+username+".</p>";
-    OUTPUT.innerHTML += "<p>As of "+year+" you are "+age+" years old.</p>";
+    OUTPUT.innerHTML += "<p>As of "+YEAR+" you are "+age+" years old.</p>";
     OUTPUT.innerHTML += "<p>You were born in "+birthYear+".</p>";
     OUTPUT.innerHTML += "<p>In 10 years you will be "+futureAge+" years old.</p>";
     OUTPUT.innerHTML += "<p>You have ¥"+money+"</p>";
