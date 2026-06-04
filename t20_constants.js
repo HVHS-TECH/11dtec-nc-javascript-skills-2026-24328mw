@@ -39,7 +39,7 @@ function testFormValidity(_form){
     return _formValidity;
 }
 function testLength(_input){
-    _fieldLength = _input.length;
+    let _fieldLength = _input.length;
     return _fieldLength;
 }
 function getListFormInput(){
