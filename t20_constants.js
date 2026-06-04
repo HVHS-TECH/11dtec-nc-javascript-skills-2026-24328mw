@@ -4,14 +4,12 @@
 console.log("Running t20_constants.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
+let username;
+let age;
+let money;
 const YEAR = 2026;
-let user = {
-    username,
-    age,
-    money,
-    birthYear,
-    futureAge,
-}
+let birthYear;
+let futureAge;
 let change;
 const CHOCOLATE_OPINION_ARRAY = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
 let chocolateOpinion;
@@ -72,7 +70,7 @@ function getFormInput(){
     }
     else{
     const NAME_FIELD = document.getElementById("nameField");
-    user.username = NAME_FIELD.value;
+    username = NAME_FIELD.value;
     textFieldValidity = testTextFieldValidity(username);
     if (textFieldValidity === false){
         OUTPUT.innerHTML = "<p>Please enter a valid name</p>"
@@ -84,34 +82,34 @@ function getFormInput(){
     }
     else{
     const AGE_FIELD = document.getElementById("ageField");
-    user.age = Number(AGE_FIELD.value);
+    age = Number(AGE_FIELD.value);
     const MONEY_FIELD = document.getElementById("moneyField");
-    user.money = Number(MONEY_FIELD.value);
+    money = Number(MONEY_FIELD.value);
     const CHOCOLATE_OPINION_FIELD = document.getElementById("chocolateOpinionField");
     chocolateOpinion = CHOCOLATE_OPINION_FIELD.value;
     const VERSES_FIELD = document.getElementById("versesField");
     verses = Number(VERSES_FIELD.value);
-    user.birthYear = YEAR - user.age;
-    user.futureAge = user.age + 10;
+    birthYear = YEAR - age;
+    futureAge = age + 10;
     /****************************
     main code
     ****************************/
-    OUTPUT.innerHTML = "<p>Hi "+user.username+".</p>";
-    OUTPUT.innerHTML += "<p>As of "+YEAR+" you are "+user.age+" years old.</p>";
-    OUTPUT.innerHTML += "<p>You were born in "+user.birthYear+".</p>";
-    OUTPUT.innerHTML += "<p>In 10 years you will be "+user.futureAge+" years old.</p>";
-    OUTPUT.innerHTML += "<p>You have ¥"+user.money+"</p>";
-    user.money = user.money / 2;
+    OUTPUT.innerHTML = "<p>Hi "+username+".</p>";
+    OUTPUT.innerHTML += "<p>As of "+YEAR+" you are "+age+" years old.</p>";
+    OUTPUT.innerHTML += "<p>You were born in "+birthYear+".</p>";
+    OUTPUT.innerHTML += "<p>In 10 years you will be "+futureAge+" years old.</p>";
+    OUTPUT.innerHTML += "<p>You have ¥"+money+"</p>";
+    money = money / 2;
     OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+money+"</p>";
-    user.money = user.money + 3;
+    money = money + 3;
     OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+money+ "</p>";
     welcome();
     displayProduct("Chocolate bar", 4);
     displayProduct("Chips", 3);
     displayProduct("Drink", 2.5);
-    if(user.money >= 4){
+    if(money >= 4){
         OUTPUT.innerHTML += "<p>A chocolate bar costs ¥4. You CAN afford a chocolate bar.</p>";
-        change = calculateChange(user.money, 4);
+        change = calculateChange(money, 4);
         OUTPUT.innerHTML += "<p>You will get ¥" +change+ " change</p>";
     }
     else{
