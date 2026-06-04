@@ -96,7 +96,7 @@ function getFormInput(){
     OUTPUT.innerHTML += "<p>In 10 years you will be "+USER.futureAge+" years old.</p>";
     OUTPUT.innerHTML += "<p>You have ¥"+USER.money+"</p>";
     USER.money = USER.money / 2;
-    OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+user.money+"</p>";
+    OUTPUT.innerHTML += "<p>You spend half of your money, now you have ¥"+USER.money+"</p>";
     USER.money = USER.money + 3;
     OUTPUT.innerHTML += "<p>Then you get ¥3, now you have ¥"+USER.money+ "</p>";
     welcome();
