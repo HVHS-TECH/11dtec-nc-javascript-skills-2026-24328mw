@@ -4,14 +4,10 @@
 console.log("Running t21_objects.js")
 const OUTPUT = document.getElementById("JavaScriptOutput");
 // Variables
-let username;
-let age;
-let money;
 const YEAR = 2026;
-let birthYear;
-let futureAge;
-let change;
 const CHOCOLATE_OPINION_ARRAY = ["You loath chocolate", "Chocolate is meh", "Chocolate is pretty good", "Chocolate is the best thing EVER!!!!"];
+const user{};
+let change;
 let chocolateOpinion;
 let verses;
 let item;
